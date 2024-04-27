@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ecu_data', function (Blueprint $table) {
+        Schema::create('ecus', function (Blueprint $table) {
             $table->id();
             $table->integer('dump_id');
             $table->string('ecu');
             $table->string('attribute');
             $table->string('value');
+            $table->timestamps();
         });
     }
 
