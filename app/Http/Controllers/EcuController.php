@@ -23,7 +23,7 @@ class EcuController extends Controller
      */
     public function create()
     {
-        //
+       'testing';
     }
 
     /**
