@@ -3,6 +3,7 @@
 use App\Http\Controllers\EcuController;
 use App\Http\Controllers\ImportController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,8 +23,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/import', [ImportController::class, 'import'])->name('import');
 
     Route::get('/index', [EcuController::class, 'index'])->name('ecu.index');
-    Route::get('/index/search', [EcuController::class, 'index'])->name('index.search');
-    Route::get('/index/sort', [EcuController::class, 'index'])->name('index.search');
+
+    Route::get('reports', [ReportController::class, 'index'])->name('reports.index');
 });
 
 require __DIR__.'/auth.php';

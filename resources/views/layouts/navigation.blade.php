@@ -22,7 +22,9 @@
                         </x-nav-link>
                     @endif
 
-
+                    <x-nav-link :href="route('reports.index')" :active="request()->routeIs('reports.index')">
+                        {{ __('Report data') }}
+                    </x-nav-link>
                 </div>
             </div>
 
