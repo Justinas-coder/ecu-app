@@ -22,6 +22,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/import', [ImportController::class, 'import'])->name('import');
 
     Route::get('/index', [EcuController::class, 'index'])->name('ecu.index');
+    Route::get('/index/search', [EcuController::class, 'index'])->name('index.search');
+    Route::get('/index/sort', [EcuController::class, 'index'])->name('index.search');
 });
 
 require __DIR__.'/auth.php';
