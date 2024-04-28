@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class=" mb-8">
-        <div class="max-w-7xl">
+        <div class="mx-auto max-w-7xl">
             <canvas id="myChart"></canvas>
         </div>
     </div>
